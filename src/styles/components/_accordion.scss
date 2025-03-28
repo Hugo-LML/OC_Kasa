@@ -1,0 +1,54 @@
+.accordion {
+  background-color: $gray;
+  border-radius: 10px;
+  overflow: hidden;
+  button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $red;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    @include desktop-only {
+      padding: 12px 16px;
+    }
+    svg {
+      width: 16px;
+      height: 16px;
+      @include desktop-only {
+        width: auto;
+        height: auto;
+      }
+    }
+    h3 {
+      margin: 0;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      @include desktop-only {
+        font-size: 24px;
+      }
+    }
+  }
+  &__content {
+    overflow: hidden;
+    font-size: 12px;
+    transition: height 0.3s ease-in-out;
+    @include desktop-only {
+      font-size: 18px;
+    }
+    &__inner {
+      padding: 16px 20px;
+      @include space-y(10px);
+    }
+    p {
+      margin: 0;
+    }
+  }
+}
