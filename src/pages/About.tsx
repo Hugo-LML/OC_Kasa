@@ -1,8 +1,11 @@
-const About = () => {
+import { FC } from "react";
+import Layout from "../components/layout/Layout";
+
+const About: FC = () => {
   return (
-    <div>
+    <Layout>
       <h1>About</h1>
-    </div>
+    </Layout>
   );
 };
 

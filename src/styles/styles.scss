@@ -1,4 +1,15 @@
+@import './utils/variables';
+@import './utils/mixins';
+
 @import './base/base';
 
 @import './layouts/header';
+@import './layouts/layout';
 @import './layouts/footer';
+
+@import './pages/home';
+@import './pages/about';
+@import './pages/rental';
+@import './pages/notFound';
+
+@import './components/homeCard';

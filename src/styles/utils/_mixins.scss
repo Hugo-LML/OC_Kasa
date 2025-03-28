@@ -1,0 +1,23 @@
+@mixin space-x($size) {
+  & > *:not(:last-child) {
+    margin-right: $size;
+  }
+}
+
+@mixin space-y($size) {
+  & > *:not(:last-child) {
+    margin-bottom: $size;
+  }
+}
+
+@mixin tablet-only {
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+    @content;
+  }
+}
+
+@mixin desktop-only {
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+    @content;
+  }
+}

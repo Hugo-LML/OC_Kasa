@@ -1,0 +1,6 @@
+main {
+  margin: 0 $mobile-gutter;
+  @include desktop-only {
+    margin: 0 $desktop-gutter;
+  }
+}

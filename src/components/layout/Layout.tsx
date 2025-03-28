@@ -2,11 +2,15 @@ import { FC, PropsWithChildren } from 'react';
 import Header from './Header/Header';
 import Footer from './Footer/Footer';
 
-const Layout: FC<PropsWithChildren> = ({ children }) => {
+interface LayoutProps extends PropsWithChildren {
+  id: string;
+}
+
+const Layout: FC<LayoutProps> = ({ id, children }) => {
   return (
     <>
       <Header />
-      <main>{children}</main>
+      <main id={id}>{children}</main>
       <Footer />
     </>
   );
