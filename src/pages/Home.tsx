@@ -1,8 +1,11 @@
-const Home = () => {
+import { FC } from "react";
+import Layout from "../components/layout/Layout";
+
+const Home: FC = () => {
   return (
-    <div>
+    <Layout>
       <h1>Home</h1>
-    </div>
+    </Layout>
   );
 };
 
