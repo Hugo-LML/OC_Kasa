@@ -6,7 +6,9 @@ const Header: FC = () => {
 
   return (
     <header>
-      <img src="/assets/images/kasa_logo.svg" alt="kasa logo" />
+      <Link to="/" className="logo">
+        <img src="/assets/images/kasa_logo.svg" alt="kasa logo" />
+      </Link>
       <nav>
         <ul>
           <li>

@@ -1,4 +1,5 @@
 .accordion {
+  width: 100%;
   background-color: $gray;
   border-radius: 10px;
   overflow: hidden;
@@ -45,7 +46,7 @@
     }
     &__inner {
       padding: 16px 20px;
-      @include space-y(10px);
+      @include space-y(6px);
     }
     p {
       margin: 0;
