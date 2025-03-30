@@ -1,0 +1,43 @@
+#not-found {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  @include desktop-only {
+  }
+  h1 {
+    margin: 48px 0 0 0;
+    font-size: 96px;
+    font-weight: 700;
+    color: $red;
+    @include desktop-only {
+      margin: 0;
+      font-size: 288px;
+    }
+  }
+  h2 {
+    margin: 96px 0 0 0;
+    font-size: 18px;
+    font-weight: 500;
+    color: $red;
+    text-align: center;
+    @include desktop-only {
+      font-size: 36px;
+    }
+  }
+  a {
+    margin: 96px 0;
+    font-size: 14px;
+    font-weight: 500;
+    color: #000;
+    text-align: center;
+    @include desktop-only {
+      text-decoration: none;
+      font-size: 18px;
+      &:hover {
+        text-decoration: underline !important;
+      }
+    }
+  }
+}
