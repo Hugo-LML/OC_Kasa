@@ -1,6 +1,6 @@
 import { FC } from "react";
 import Layout from "../components/layout/Layout";
-import Accordion from "../components/common/Accordion/Accordion";
+import Accordion from "../components/common/accordion/Accordion";
 
 const accordionsData = [
   {

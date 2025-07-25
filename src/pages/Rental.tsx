@@ -4,7 +4,7 @@ import rentals from "../data/mock.json";
 import { Navigate, useParams } from "react-router-dom";
 import RentalSlider from "../components/rental/RentalSlider/RentalSlider";
 import Star from "../components/icons/Star";
-import Accordion from "../components/common/Accordion/Accordion";
+import Accordion from "../components/common/accordion/Accordion";
 
 const Rental: FC = () => {
   const { rentalId } = useParams();

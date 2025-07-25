@@ -8,11 +8,13 @@ interface LayoutProps extends PropsWithChildren {
 
 const Layout: FC<LayoutProps> = ({ id, children }) => {
   return (
-    <>
-      <Header />
-      <main id={id}>{children}</main>
+    <div className='layout-wrapper'>
+      <div>
+        <Header />
+        <main id={id}>{children}</main>
+      </div>
       <Footer />
-    </>
+    </div>
   );
 };
 
